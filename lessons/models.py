@@ -13,3 +13,7 @@ class Makale(models.Model):
     aktif = models.BooleanField(default=True)
     yaratilma_tarihi = models.DateTimeField(auto_now_add=True)
     guncelleme_tarihi = models.DateTimeField(auto_now=True)
+
+
+def __str__(self):
+    return self.baslik
